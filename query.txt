@@ -1,0 +1,10 @@
+SELECT * FROM `transactions` WHERE customer_id = 1;
+SELECT * FROM `transactions` WHERE customer_id = 2 GROUP BY medicine_id;
+SELECT * FROM `transactions` WHERE customer_id = 2 GROUP BY date;
+SELECT * FROM `transactions` WHERE customer_id = 1 ORDER BY medicine_id;
+SELECT * FROM `transactions` WHERE customer_id = 3 ORDER BY date ASC;
+SELECT * FROM `transactions` WHERE customer_id = 4 ORDER BY medicine_id DESC;
+SELECT * FROM `customers` WHERE name like "%ahmad%";
+SELECT * FROM `customers` WHERE name like "%Gojali%";
+SELECT * FROM 'medicines where type like "%cair%";
+SELECT sum(stock) FROM `medicines`;
